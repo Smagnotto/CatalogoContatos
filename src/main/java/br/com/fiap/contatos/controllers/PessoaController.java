@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.fiap.contatos.pojo.CreatePessoaPojo;
 import br.com.fiap.contatos.pojo.PessoaPojo;
+import br.com.fiap.contatos.pojo.UpdatePessoaPojo;
 import br.com.fiap.contatos.service.PessoaService;
 
 import io.swagger.annotations.ApiResponse;
@@ -58,7 +59,7 @@ public class PessoaController {
         @ApiResponse(code = 404, message = "Id do pessoa informado não existe")
     })
     @PutMapping(path = "{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public PessoaPojo update(@PathVariable Integer id, @RequestBody @Valid CreatePessoaPojo pessoa) {
+    public PessoaPojo update(@PathVariable Integer id, @RequestBody @Valid UpdatePessoaPojo pessoa) {
         return service.update(id, pessoa);
     }
 

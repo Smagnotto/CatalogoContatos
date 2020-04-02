@@ -1,7 +1,6 @@
 package br.com.fiap.contatos.service;
 
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -11,9 +10,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import br.com.fiap.contatos.domain.Pessoa;
-import br.com.fiap.contatos.domain.Telefone;
 import br.com.fiap.contatos.pojo.CreatePessoaPojo;
 import br.com.fiap.contatos.pojo.PessoaPojo;
+import br.com.fiap.contatos.pojo.UpdatePessoaPojo;
 import br.com.fiap.contatos.repository.PessoaRepository;
 
 @Service
@@ -42,12 +41,11 @@ public class PessoaService {
         return new PessoaPojo(pessoaSaved);
     }
 
-    public PessoaPojo update(Integer id, CreatePessoaPojo pessoaCreate) {
+    public PessoaPojo update(Integer id, UpdatePessoaPojo pessoaCreate) {
         Pessoa pessoa = getById(id);
 
         pessoa.setNome(pessoaCreate.getNome());
         pessoa.setCpf(pessoaCreate.getCpf());
-        //pessoa.setTelefones(pessoaCreate.getTelefones());
 
         Pessoa pessoaUpdated = repository.save(pessoa);
         return new PessoaPojo(pessoaUpdated);

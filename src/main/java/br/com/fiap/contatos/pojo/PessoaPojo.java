@@ -4,7 +4,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import br.com.fiap.contatos.domain.Pessoa;
-import br.com.fiap.contatos.domain.Telefone;
 
 public class PessoaPojo {
     public PessoaPojo(Pessoa pessoa) {
