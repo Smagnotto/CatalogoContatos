@@ -1,7 +1,5 @@
 # Catalogo de Contatos 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 Catalogo de Contatos é uma API desenvolvida para auxilio de pessoas que estão trabalhando de forma home-office. A API serve de forma colaborativa, onde é possível consultar os contatos de colegas de trabalho.
 
 A API possui as seguintes funções
