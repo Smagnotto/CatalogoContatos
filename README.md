@@ -21,7 +21,7 @@ A API de Catalogo de Contatos utiliza as seguintes tecnologias:
 * [Spring Boot](https://spring.io/projects/spring-boot) - Framework inicialmente desenvolvido pela Netflix para desenvolvimento de APIs. Hoje é aberto para comunidade do Java
 * [MySql Database](http://mysql.com) - Banco de dados relacional
 
-A API está publicada no [Heroku](http://heroku.com), que é uma Plataform as a Service (Saas), que possibilita desenvolvedores a desenvolver, publicar e rodar sua aplicação inteiramente na cloud.
+A API está publicada no [Heroku](http://heroku.com), que é uma Plataform as a Service (Saas), que possibilita desenvolvedores a desenvolver, publicar e rodar sua aplicação inteiramente na cloud, sem se preocupar com a infraestrutura.
 
 ### Documentação
 
