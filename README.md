@@ -14,7 +14,7 @@ A API possui as seguintes funções
 
 Com a API de catalogos de contatos, não é necessário ficar salvando diversos telefones de colegas de trabalho, pois em um unico ambiente centralizado, é possível encontrar todas as pessoas que trabalham com você.
 
-### Tecnologia
+# Tecnologia
 
 A API de Catalogo de Contatos utiliza as seguintes tecnologias:
 
